@@ -19,10 +19,50 @@
     #define max3(a,b,c) max(a,max(b,c))
     #define _USE_MATH_DEFINES
     #define ms(a) memset(a,0,sizeof(a))
+    #define MAX_LIM 1000002
     typedef pair<int, int> p;
+
+    ll phi[MAX_LIM];
+    ll phid[MAX_LIM];
+    
     void solve()
     {
+        for(int i=1;i<MAX_LIM;i++)
+        {
+            phi[i] = i;
+            phid[i] = 0;
+        }
 
+        for(int i=2;i<MAX_LIM;i++)
+        {
+            if(phi[i]==i)
+            {
+                for(int j = i; j < MAX_LIM; j+=i)
+                {
+                    phi[j] -= phi[j]/i;
+                }
+            }
+        }  
+
+        for(int i = 1; i<MAX_LIM; i++)
+        {
+            for(int j = i; j < MAX_LIM; j += i)
+            {
+                phid[j] += phi[i]*i;
+            }
+        }
+
+        int t;
+        cin>>t;
+        while(t--)
+        {
+            int n;
+            cin>>n;
+            ll res = (phid[n] + 1);
+            res *= n;
+            res /=2;
+            cout<<res<<endl;
+        }
     }
 
     int main()

@@ -1,0 +1,6 @@
+Readings:
+
+https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
+
+ If d is a divisor of n, then there are Phi(n/d) numbers i <= n for which gcd(i,n)=d
+https://codeforces.com/blog/entry/7308

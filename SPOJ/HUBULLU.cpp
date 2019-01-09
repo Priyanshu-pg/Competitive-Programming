@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
     using namespace std;
      
-    #define pb push_back
-    #define mp make_pair
-    #define fr first
-    #define sc second
     #define ll long long
     #define ull unsigned long long
     #define PI 3.14159265358979323846
@@ -19,10 +15,22 @@
     #define max3(a,b,c) max(a,max(b,c))
     #define _USE_MATH_DEFINES
     #define ms(a) memset(a,0,sizeof(a))
-    typedef pair<int, int> p;
+
     void solve()
     {
-
+        ll t;
+        cin>>t;
+        while(t--)
+        {
+            ll n, s;
+            cin>>n>>s;
+            if(s==0)
+                cout<<"Airborne wins.";
+            else
+                cout<<"Pagfloyd wins.";
+            cout<<endl;
+        }
+        
     }
 
     int main()
