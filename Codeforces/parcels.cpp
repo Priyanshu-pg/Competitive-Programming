@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
 #define pb push_back
 #define mp make_pair
 #define fr first
@@ -20,14 +19,30 @@ using namespace std;
 #define _USE_MATH_DEFINES
 #define ms(a) memset(a,0,sizeof(a))
 typedef pair<int, int> p;
+
 void solve()
 {
-
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int r, c;
+        cin>>r>>c;
+        int a[r][c];
+        for(int i = 0; i < r; i++)
+        {
+            for(int j = 0; j < c; j++)
+            {
+                cout<<"erdfugugjvhjvhjv";
+            }
+        }
+    }
 }
 
 int main()
 {
-    #ifdef ONLINE_JUDGE
+    #ifdef 
+        ONLINE_JUDGE
     #else
         fileI;
         fileO;

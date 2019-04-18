@@ -22,6 +22,36 @@ using namespace std;
 typedef pair<int, int> p;
 void solve()
 {
+    int t;
+    cin>>t;
+    for(int k = 1; k <= t; k++)
+    {
+        string n;
+        cin>>n;
+        string a, b;
+        a = n;
+        b = "";
+        bool encountered = false;
+        for(int i = 0; i < n.size(); i++)
+        {
+            if(n[i] == '4')
+            {
+                if(!encountered)
+                {
+                    encountered = true; 
+                }
+
+                a[i] = '2';
+                b += '2';
+            }
+            else
+            {
+                if(encountered)
+                    b = b + '0';
+            }
+        }
+        cout<<"Case #"<<k<<": "<<a<<" "<<b<<endl;
+    }
 
 }
 

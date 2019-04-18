@@ -22,7 +22,24 @@ using namespace std;
 typedef pair<int, int> p;
 void solve()
 {
-
+	// cout<<(char)('A'+1)<<endl;
+	int t;
+	cin>>t;
+	for(int k = 1; k <= t; k++)
+	{
+		ll n; 
+		cin>>n;
+		string s;
+		cin>>s;
+		for(ll i = 0; i < s.size(); i++)
+		{
+			if(s[i] == 'E')
+				s[i] = 'S';
+			else
+				s[i] = 'E';
+		}
+		cout<<"Case #"<<k<<": "<<s<<endl;
+	}
 }
 
 int main()
